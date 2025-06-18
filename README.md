@@ -215,8 +215,8 @@ This generates a blueprint with the necessary fields (order_number, customer_nam
 
 ## 🛠 Requirements
 
-* PHP 8.0+
-* Statamic 4.x
+* PHP 8.1+
+* Statamic 5.x
 * SMTP configured (for emailing invoices. Optional)
 
 ---
