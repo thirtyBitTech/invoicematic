@@ -1,0 +1,10 @@
+# .gitignore
+/vendor
+/node_modules
+/.idea
+.DS_Store
+.env
+*.log
+*.pdf
+*.zip
+storage/

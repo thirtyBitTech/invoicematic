@@ -1,0 +1,65 @@
+{
+    "name": "thirtybittech/invoicematic",
+    "description": "A Statamic addon for generating professional PDF invoices with dynamic content and seamless CMS integration.",
+    "type": "statamic-addon",
+    "keywords": [
+        "statamic",
+        "addon",
+        "invoice",
+        "pdf",
+        "generator",
+        "billing",
+        "laravel"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "30Bit Tech",
+            "email": "contact@30-bit.com",
+            "homepage": "http://30-bit.com",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://github.com/thirtybittech/invoicematic",
+    "support": {
+        "issues": "https://github.com/thirtybittech/invoicematic/issues",
+        "source": "https://github.com/thirtybittech/invoicematic"
+    },
+    "require": {
+        "php": "^8.1",
+        "barryvdh/laravel-dompdf": "^3.1",
+        "statamic/cms": "^5.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Thirtybittech\\Invoicematic\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Thirtybittech\\Invoicematic\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Invoicematic",
+            "description": "Generate stylish PDF invoices from entries, orders, or custom data in Statamic CMS."
+        },
+        "laravel": {
+            "providers": [
+                "Thirtybittech\\Invoicematic\\ServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pixelfear/composer-dist-plugin": true
+        },
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
