@@ -105,12 +105,10 @@ class GenerateInvoiceOnOrderCreated
         foreach ($handles as $handle) {
             $value = $entry->get($handle);
             if ($value !== null) {
-                Log::debug("Resolved [$canonical] using [$handle]: " . json_encode($value));
                 return $value;
             }
         }
 
-        Log::debug("No field resolved for [$canonical] in [$collection]");
         return null;
     }
 
