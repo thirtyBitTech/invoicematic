@@ -221,6 +221,12 @@ This generates a blueprint with the necessary fields (order_number, customer_nam
 
 ---
 
+## Limitations
+- This addon does **not** calculate values such as `subtotal`, `total`, or `tax`.
+- All values will be used **as-is** in the entry; they must be pre-calculated before being passed to the addon.
+
+
+---
 ## 📩 Support
 
 Need help or a custom integration? Contact [contact@30-bit.com](mailto:contact@30-bit.com)
